@@ -43,9 +43,10 @@ def remove_dir(root_path):
 	os.rmdir(root_path)
 
 if __name__ == "__main__":
-	root_path = sys.argv[0]
-	# root_path = r"D:\DownloadDir\BVideos\39051579"
+	# TODO 目录检查是否是合格的目录
+	# 参数格式："D:\DownloadDir\BVideos\5028728"
+	root_path = sys.argv[1]
+	# TODO 把打印的结果输出为log日志
 	convert_dir(root_path)
+	# TODO 是否删除源目录应该可以配置
 	remove_dir(root_path)
-	# os.removedirs(root_path)
-
